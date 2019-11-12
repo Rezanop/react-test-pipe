@@ -13,7 +13,8 @@
     "storybook": "start-storybook",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:staged": "jest --findRelatedTests"
   },
   "husky": {
     "hooks": {
@@ -23,6 +24,7 @@
   "lint-staged": {
     "*.js": [
       "npm run lint:fix",
+      "npm run test:staged",
       "git add"
     ]
   },
