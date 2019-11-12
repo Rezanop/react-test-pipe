@@ -10,9 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Rezanop/react-test-pipe.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["react", "css"],
+  "author": "Nacer",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rezanop/react-test-pipe/issues"
   },
