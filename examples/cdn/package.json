@@ -1,0 +1,13 @@
+{
+  "name": "cdn",
+  "version": "1.0.0",
+  "description": "Minimal demo of the pipe library with create-react-app using ESM Bundle.",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "react-test-pipe": "file:../.."
+  },
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}
