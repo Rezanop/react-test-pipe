@@ -14,7 +14,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:staged": "jest --findRelatedTests"
+    "test:staged": "jest --findRelatedTests",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "husky": {
     "hooks": {
@@ -49,6 +50,7 @@
     "@storybook/react": "^5.2.6",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "coveralls": "^3.0.7",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
