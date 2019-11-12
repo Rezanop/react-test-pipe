@@ -4,6 +4,8 @@
   "description": "Testing pipeline setup",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist ",
+    "build": "rollup -c",
     "lint": "eslint **/*.js",
     "lint:fix": "prettier-eslint '**/*.js' --write"
   },
@@ -33,15 +35,24 @@
   },
   "homepage": "https://github.com/Rezanop/react-test-pipe#readme",
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
     "prettier-eslint": "^9.0.0",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.26.5",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2"
   }
 }
